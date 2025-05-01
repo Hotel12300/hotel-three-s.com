@@ -1,107 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Three S - Home</title>
-    <style>
-        body {
-            background-image: url('threes.jpeg'); /* फोटो फाइल नाम सुधारिएको */
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background height:100vh ;
-            background-size: 100%; 
-        }
-        header {
-            background-color: #003366;
-            color: white;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        nav a {
-            color: white;
-            margin: 0 10px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-        nav a:hover {
-            color: #ffcc00;
-        }
-        .hero {
-            background-image: url('https://source.unsplash.com/1600x600/?hotel,resort'); /* राम्रो image source */
-            background-size: cover;
-            background-position: center;
-            height: 500px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-            font-size: 3rem;
-            font-weight: bold;
-            text-align: center;
-        }
-        .about {
-            background-color: rgba(255, 255, 255, 0.9);
-            padding: 60px 20px;
-            text-align: center;
-            margin: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .about h2 {
-            color: #003366;
-            margin-bottom: 20px;
-        }
-        .about p {
-            font-size: 1.1rem;
-            line-height: 1.6;
-            color: #333;
-        }
-        footer {
-            background-color: #003366;
-            color: white;
-            text-align: center;
-            padding: 15px 0;
-            margin-top: 30px;
-        }
-    </style>
-</head>
-<body>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<header>
+  <!-- ✅ Google Search Console Verification -->
+  <meta name="google-site-verification" content="FHENMxTKG4RUc16s6SCQP9IhQA3rjUkzCOmz8emLkLo" />
+
+  <title>Hotel Three S - Home</title>
+
+  <!-- ✅ Google Analytics (Replace G-XXXX with your actual GA4 ID) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- ✅ Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXXX');
+  </script>
+
+  <!-- ✅ Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Hotel",
+    "name": "Hotel Three S Pvt. Ltd",
+    "image": "https://yourdomain.com/logo.png",
+    "telephone": "+9779847554513",
+    "email": "info.hotelthree@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Banganga-03, Rajapani",
+      "addressLocality": "Kapilvastu",
+      "addressCountry": "NP"
+    },
+    "url": "https://yourdomain.com"
+  }
+  </script>
+
+  <style>
+    body {
+      background-image: url('threes.jpeg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    .hero {
+      background-image: url('https://source.unsplash.com/1600x600/?hotel,resort');
+      background-size: cover;
+      background-position: center;
+      height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+      font-size: 3rem;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .about {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 60px 20px;
+      text-align: center;
+      margin: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .about h2 {
+      color: #003366;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 30px;
+    }
+
+    marquee {
+      background-color: rgba(255, 255, 255, 0.7);
+      color: #003366;
+      font-weight: bold;
+      padding: 10px;
+      font-size: 20px;
+      border-radius: 5px;
+    }
+
+    img {
+      height: 60px;
+      margin-left: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ✅ GTM noscript -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+
+  <header>
     <div class="logo">
-        <h1>Hotel Three S Pvt. Ltd</h1> <img src="logo.png" alt="Logo" style="height: 80px;">
+      <h1>Hotel Three S Pvt. Ltd</h1>
+      <img src="logo.png" alt="Hotel Logo">
     </div>
     <nav>
-          <a href="index.html">Home</a>
-    <a href="Rooms.html">Rooms</a>
-    <a href="Service.html">Services</a>
-    <a href="Book.html">Book Now</a>
-    <a href="Contact us.html">Contact Us</a>
+      <a href="index.html">Home</a>
+      <a href="Rooms.html">Rooms</a>
+      <a href="Service.html">Services</a>
+      <a href="Book.html">Book Now</a>
+      <a href="Contact us.html">Contact Us</a>
     </nav>
-</header>
+  </header>
 
-<section class="hero" bgcolor="red">
-   <marquee style="color: darkblue; font-size: 24px; font-weight: bold;"> Welcome to Hotel Three S Pvt. Ltd</marquee>
-</section>
+  <section class="hero">
+    <marquee>Welcome to Hotel Three S Pvt. Ltd</marquee>
+  </section>
 
-<section class="about">
+  <section class="about">
     <h2 title="About us">About Us</h2>
-    <p>Thank you very much for your interest in our Resort.<br>
-    Hotel Three S is one of the best Hotels and Resorts in the Kapilvastu district.<br>We offer services like Lodging, Boating, Fishing, Barbecue (BBQ), Night Stay, Conference Hall, Group Stay & Meeting Hall, Free Parking, Garden Water Park, Airport Shuttle, Restaurant, Room Service, Smoking and Non-smoking Rooms, and Private Parking.</p>
-</section>
+    <p>
+      Thank you very much for your interest in our Resort.<br>
+      Hotel Three S is one of the best Hotels and Resorts in the Kapilvastu district.<br>
+      We offer services like Lodging, Boating, Fishing, Barbecue (BBQ), Night Stay, Conference Hall, Group Stay & Meeting Hall, Free Parking, Garden Water Park, Airport Shuttle, Restaurant, Room Service, Smoking and Non-smoking Rooms, and Private Parking.
+    </p>
+  </section>
 
-<footer>
+  <footer>
     <p>&copy; 2025 Hotel Three S Pvt. Ltd. | All Rights Reserved</p>
-</footer>
-
+  </footer>
 </body>
 </html>
