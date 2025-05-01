@@ -90,13 +90,13 @@
 <body>
 
 <header>
-  <h1>Hotel Three S Pvt. Ltd</h1> <img src="logo.png" alt="Logo" style="height: 80px;">
+ <h1>Hotel Three S Pvt. Ltd</h1> <img src="logo.png" alt="Logo" style="height: 80px;">
   <nav>
     <a href="index.html">Home</a>
     <a href="Rooms.html">Rooms</a>
-    <a href="Services.html">Services</a>
+    <a href="Service.html">Services</a>
     <a href="Book.html">Book Now</a>
-    <a href="Contactus.html">Contact Us</a>
+    <a href="Contact us.html">Contact Us</a>
   </nav>
 </header>
 
@@ -104,10 +104,9 @@
 
 <div class="contact-info">
   <p>If you have any questions, feel free to reach out to us. We are here to assist you.</p>
- 
-  <p>📞  Phone: 9847554513, 9869848084</p>
-  <p>📧Email: <a href="mailto:info.hotelthree@gmail.com">info.hotelthree@gmail.com</a></p>
-  <p>📍 Address: Banganga-03 rajapani, Kapilvastu Nepal</p>
+  <p>Email: <a href="mailto:info.hotelthree@gmail.com">info.hotelthree@gmail.com</a></p>
+  <p>Phone: 9847554513, 9869848084</p>
+  <p>Address: Banganga-03 rajapani, Kapilvastu Nepal</p>
 </div>
 
 <div class="contact-form">
@@ -129,7 +128,14 @@
 <h3>Our Location</h3>
 <iframe src="https://www.google.com/maps?q=Hotel+Three+S+Pvt+Ltd,+Banganga-03,+Rajapani,+Kapilvastu,+Nepal&output=embed" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 </div>
-<footer>
+<footer><script>
+  document.getElementById("contactForm").addEventListener("submit", function (event) {
+    event.preventDefault(); // Form action रोक्न
+    const name = document.getElementById("name").value;
+    alert(`Thank you, ${name}! Your message has been sent.`);
+    window.location.href = "index.html";
+  });
+</script>
   <p>&copy; 2025 Hotel Three S Pvt. Ltd. | All Rights Reserved</p>
 </footer>
 
