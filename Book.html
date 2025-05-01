@@ -31,7 +31,7 @@
   <nav>
     <a href="index.html">Home</a>
     <a href="Rooms.html">Rooms</a>
-    <a href="Services.html">Services</a>
+    <a href="Service.html">Services</a>
     <a href="Book.html">Book Now</a>
     <a href="Contact us.html">Contact Us</a>
   </nav>
@@ -149,7 +149,8 @@
     emailjs.send('service_jkre9rh', 'template_uj7h9lx', formData)
       .then(() => {
         alert(`Thank you, ${formData.fullname}! Your booking has been confirmed.`);
-        window.location.href = "Home.html";
+        // Redirect to Home.html after booking confirmation
+        window.location.href = "index.html";  // Ensure this is the correct file name/path
       })
       .catch(error => {
         console.error('EmailJS Error:', error);
