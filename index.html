@@ -3,10 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Hotel Three S is the best hotel in Kapilvastu for lodging, boating, and BBQ. Book now!">
-<meta name="keywords" content="Hotel Three S, Hotel in Kapilvastu, Kapilvastu hotel, lodging, BBQ, Night stay">
-<meta name="robots" content="index, follow">
-
 
   <!-- ✅ Google Search Console Verification -->
  <meta name="google-site-verification" content="FHENMxTKG4RUc16s6SCQP9IhQA3rjUkzCOmz8emLkLo" />
@@ -23,6 +19,7 @@
     gtag('js', new Date());
     gtag('config', 'G-XXXXXXXXXX');
   </script>
+
 
   <!-- ✅ Google Tag Manager -->
   <script>
@@ -48,9 +45,56 @@
       "addressLocality": "Kapilvastu",
       "addressCountry": "NP"
     },
-    "url": "https://hotelthreesite.vercel.app/"
+    "url": "https://yourdomain.com"
   }
   </script>
+  <!-- Add before </body> -->
+<button onclick="topFunction()" id="topBtn" title="Go to top" style="
+  display: none;
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #003366;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 5px;
+">Top</button>
+<!-- Add just after <body> tag -->
+<div id="preloader" style="
+  background: white url('https://i.gifer.com/ZZ5H.gif') no-repeat center center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+"></div>
+
+<script>
+  window.addEventListener('load', () => {
+    document.getElementById('preloader').style.display = 'none';
+  });
+</script>
+
+
+<script>
+  let topBtn = document.getElementById("topBtn");
+  window.onscroll = function () {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      topBtn.style.display = "block";
+    } else {
+      topBtn.style.display = "none";
+    }
+  };
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+
 
   <style>
     body {
@@ -131,6 +175,33 @@
       text-align: center;
       padding: 15px 0;
       margin-top: 30px;
+      .social-icons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 0;
+}
+
+.social-icons a {
+  display: inline-block;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px rgba(255, 204, 0, 0.7);
+  border-radius: 50%;
+}
+
+.social-icons img {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: white;
+  padding: 5px;
+}
+
     }
 
     marquee {
@@ -158,7 +229,7 @@
 
   <header>
     <div class="logo">
-      <h1>Hotel Three S Pvt. Ltd <h5>V1.0</h5></h1>
+      <h1>Hotel Three S Pvt. Ltd</h1>
       <img src="logo.png" alt="Hotel Logo">
     </div>
     <nav>
@@ -169,7 +240,6 @@
       <a href="Contact us.html">Contact Us</a>
     </nav>
   </header>
-
   <section class="hero">
     <marquee>Welcome to Hotel Three S Pvt. Ltd</marquee>
   </section>
@@ -183,8 +253,19 @@
     </p>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Hotel Three S Pvt. Ltd. | All Rights Reserved</p>
-  </footer>
+<footer>
+  <p>&copy; 2025 Hotel Three S Pvt. Ltd. | All Rights Reserved</p>
+  <div class="social-icons">
+    <a href="https://www.facebook.com/HotelThreeSPvt.Ltd" target="_blank" title="Facebook">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+    </a>
+    <a href="https://www.tiktok.com/@hotel_three_s_pvt_ltd" target="_blank" title="TikTok">
+      <img src="https://cdn-icons-png.flaticon.com/512/3046/3046122.png" alt="TikTok">
+    </a>
+    <a href="https://wa.me/9779847554513" target="_blank" title="WhatsApp">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+    </a>
+  </div>
+</footer>
 </body>
 </html>
